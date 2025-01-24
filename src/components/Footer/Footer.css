@@ -1,0 +1,16 @@
+.footer {
+    min-height: 60px;
+    background-color: #000;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+.footer-links li {
+    margin-bottom: .6rem;
+}
+.footer-links li a {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
