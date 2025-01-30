@@ -1,5 +1,5 @@
-// Navigation.jsx
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function Navigation() {
   const currentPath = window.location.pathname;
@@ -8,36 +8,36 @@ function Navigation() {
     <nav className="nav">
       <ul className="nav-links">
         <li>
-          <a 
-            href="/" 
+          <Link 
+            to="/" 
             className={`nav-link ${currentPath === "/" ? "active" : ""}`}
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a 
-            href="/about" 
+          <Link 
+            to="/about" 
             className={`nav-link ${currentPath === "/about" ? "active" : ""}`}
           >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a 
-            href="/services" 
+          <Link 
+            to="/services" 
             className={`nav-link ${currentPath === "/services" ? "active" : ""}`}
           >
             Services
-          </a>
+          </Link>
         </li>
         <li>
-          <a 
-            href="/contact" 
+          <Link 
+            to="/contact" 
             className={`nav-link ${currentPath === "/contact" ? "active" : ""}`}
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

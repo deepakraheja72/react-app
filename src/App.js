@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+
 // Import components
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -12,7 +13,7 @@ import MiddleSection from "./components/MiddleSection/MiddleSection";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-app"> {/* Set basename to your repository name */}
       <Header />
       <MiddleSection>
         <Routes>
